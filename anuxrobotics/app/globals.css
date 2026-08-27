@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Huninn&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -6,7 +6,7 @@
   --paper: #fffefe;
   --deep: #052437;
   --cyan: #3fd1c9;
-  --coral: #f57d72;
+  --coral: #ec7368;
   --line: #e4e2db;
   --hover: #ee5d5d;
 }
@@ -14,8 +14,8 @@
 @theme inline {
   --color-background: var(--paper);
   --color-foreground: var(--ink);
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
 }
 
 html {
@@ -34,7 +34,7 @@ h1, h2, h3, .font-display {
 }
 
 .hero-white-panel {
-  clip-path: polygon(0 0, 54% 0, 24% 100%, 0 100%);
+  clip-path: polygon(0 0, 58% 0, 38% 100%, 0 100%);
 }
 
 .hero-image::after {

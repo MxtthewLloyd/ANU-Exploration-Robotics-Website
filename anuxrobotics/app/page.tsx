@@ -18,7 +18,7 @@ export default function Home() {
           </video>
         </div>
 
-        <div className="hero-white-panel absolute inset-0 z-[1] bg-white/80" />
+        <div className="hero-white-panel absolute inset-0 z-[1] bg-white/60" />
 
         {/* Scroll indicator */}
         <div className="absolute right-6 top-1/2 z-[3] hidden -translate-y-1/2 flex-col items-center gap-2.5 text-white/85 md:flex">
@@ -34,29 +34,29 @@ export default function Home() {
             <div className="flex items-center gap-2.5">
               <Image src="/logo (1).png" alt="Exploration Robotics logo" width={200} height={40} />
             </div>
-            <ul className="hidden gap-7 md:flex">
+            <ul className="hidden gap-10 md:flex">
               <li>
-                <Link href="/team" className="inline-block text-xs font-medium uppercase tracking-wide text-[--ink] transition-transform duration-200 hover:scale-110 hover:text-[--coral]">
+                <Link href="/team" className="inline-block text-sm font-medium uppercase tracking-wide text-[--ink] transition-transform duration-200 hover:scale-110 hover:text-[--coral]">
                   Team
                 </Link>
               </li>
               <li>
-                <Link href="/vehicle" className="inline-block text-xs font-medium uppercase tracking-wide text-[--ink] transition-transform duration-200 hover:scale-110 hover:text-[--coral]">
+                <Link href="/vehicle" className="inline-block text-sm font-medium uppercase tracking-wide text-[--ink] transition-transform duration-200 hover:scale-110 hover:text-[--coral]">
                   Vehicle
                 </Link>
               </li>
               <li>
-                <Link href="/sponsors" className="inline-block text-xs font-medium uppercase tracking-wide text-[--ink] transition-transform duration-200 hover:scale-110 hover:text-[--coral]">
+                <Link href="/sponsors" className="inline-block text-sm font-medium uppercase tracking-wide text-[--ink] transition-transform duration-200 hover:scale-110 hover:text-[--coral]">
                   Partners
                 </Link>
               </li>
               <li>
-                <Link href="/updates" className="inline-block text-xs font-medium uppercase tracking-wide text-[--ink] transition-transform duration-200 hover:scale-110 hover:text-[--coral]">
+                <Link href="/updates" className="inline-block text-sm font-medium uppercase tracking-wide text-[--ink] transition-transform duration-200 hover:scale-110 hover:text-[--coral]">
                   Updates
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="inline-block text-xs font-medium uppercase tracking-wide text-[--ink] transition-transform duration-200 hover:scale-110 hover:text-[--coral]">
+                <Link href="/contact" className="inline-block text-sm font-medium uppercase tracking-wide text-[--ink] transition-transform duration-200 hover:scale-110 hover:text-[--coral]">
                   Contact
                 </Link>
               </li>
@@ -65,7 +65,7 @@ export default function Home() {
 
           <div className="flex flex-1 items-center pr-8">
             <div>
-              <h1 className="font-display text-[clamp(3.4rem,7vw,6.2rem)] font-extrabold leading-[0.95] tracking-tight">
+              <h1 className="font-display text-[clamp(3rem,5.5vw,5rem)] font-semibold leading-[1.1] tracking-tight">
                 Exploration
                 <br />
                 Robotics
@@ -76,7 +76,7 @@ export default function Home() {
 
               <Link
                 href="/team"
-                className="mt-6 inline-block rounded-sm bg-[var(--coral)] px-7 py-3.5 text-xs font-semibold uppercase tracking-wide text-white transition-colors hover:bg-[var(--ink)]"
+                className="mt-7 inline-block rounded-sm bg-[var(--coral)] px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[var(--ink)]"
               >
                 Learn more
               </Link>
@@ -124,12 +124,16 @@ export default function Home() {
             <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[--coral]">Who we are</span>
             <h2 className="my-4 text-3xl font-semibold">About us</h2>
             <p className="mb-4 text-base leading-7 text-[#3b444d]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              ANU Exploration Robotics is a student-run team designing and building an autonomous
+              underwater vehicle for the RobotX RoboSub competition. We&apos;re currently developing
+              Prototype 1.0 — a tethered proof-of-concept vehicle that demonstrates controlled
+              underwater movement, laying the foundation for a fully autonomous competition vehicle
+              to follow.
             </p>
             <p className="mb-4 text-base leading-7 text-[#3b444d]">
-              Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+              We&apos;re a small, hands-on crew spanning mechanical, electrical, software, and
+              business — following a disciplined design process from requirements through to
+              in-water testing. Always looking for people who want to build something real.
             </p>
             <Link
               href="/contact"
