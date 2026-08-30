@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      {/* HERO */}
+      {/* HER */}
       <section className="relative h-screen min-h-[640px] overflow-hidden bg-[var(--paper)]">
         <div className="hero-image absolute inset-0">
           <video
