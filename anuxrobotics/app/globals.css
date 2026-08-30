@@ -2,6 +2,7 @@
 @import "tailwindcss";
 
 :root {
+  --depth-color: #1a7f94;
   --ink: #f2f0ec;
   --paper: #0b141d;
   --deep: #052437;
@@ -43,6 +44,15 @@ h1, h2, h3, .font-display {
   );
 }
 
+.hero-fade {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 8px;
+  background: #070707;
+  pointer-events: none;
+}
 
 .hero-image::after {
   content: "";
