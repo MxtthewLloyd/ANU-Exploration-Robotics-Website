@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative h-screen min-h-[640px] overflow-hidden bg-[--paper]">
+      <section className="relative h-screen min-h-[640px] overflow-hidden bg-[var(--paper)]">
         <div className="hero-image absolute inset-0">
           <video
             autoPlay
@@ -18,7 +18,7 @@ export default function Home() {
           </video>
         </div>
 
-        <div className="hero-white-panel absolute inset-0 z-[1] bg-white/60" />
+        <div className="hero-white-panel absolute inset-0 z-[1]" />
 
         {/* Scroll indicator */}
         <div className="absolute right-6 top-1/2 z-[3] hidden -translate-y-1/2 flex-col items-center gap-2.5 text-white/85 md:flex">
@@ -32,31 +32,31 @@ export default function Home() {
         <div className="relative z-[2] flex h-full w-full flex-col px-6 pb-16 pt-8 md:w-[62%] md:px-12">
           <nav className="flex items-center gap-16 md:pr-16">
             <div className="flex items-center gap-2.5">
-              <Image src="/logo (1).png" alt="Exploration Robotics logo" width={200} height={40} />
+              <Image src="/logo.png" alt="Exploration Robotics logo" width={200} height={40} />
             </div>
             <ul className="hidden gap-10 md:flex">
               <li>
-                <Link href="/team" className="inline-block text-sm font-medium uppercase tracking-wide text-[--ink] transition-transform duration-200 hover:scale-110 hover:text-[--coral]">
+                <Link href="/team" className="inline-block text-sm font-medium uppercase tracking-wide text-white transition-transform duration-200 hover:scale-110 hover:text-[var(--coral)]">
                   Team
                 </Link>
               </li>
               <li>
-                <Link href="/vehicle" className="inline-block text-sm font-medium uppercase tracking-wide text-[--ink] transition-transform duration-200 hover:scale-110 hover:text-[--coral]">
+                <Link href="/vehicle" className="inline-block text-sm font-medium uppercase tracking-wide text-white transition-transform duration-200 hover:scale-110 hover:text-[var(--coral)]">
                   Vehicle
                 </Link>
               </li>
               <li>
-                <Link href="/sponsors" className="inline-block text-sm font-medium uppercase tracking-wide text-[--ink] transition-transform duration-200 hover:scale-110 hover:text-[--coral]">
+                <Link href="/sponsors" className="inline-block text-sm font-medium uppercase tracking-wide text-white transition-transform duration-200 hover:scale-110 hover:text-[var(--coral)]">
                   Partners
                 </Link>
               </li>
               <li>
-                <Link href="/updates" className="inline-block text-sm font-medium uppercase tracking-wide text-[--ink] transition-transform duration-200 hover:scale-110 hover:text-[--coral]">
+                <Link href="/updates" className="inline-block text-sm font-medium uppercase tracking-wide text-white transition-transform duration-200 hover:scale-110 hover:text-[var(--coral)]">
                   Updates
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="inline-block text-sm font-medium uppercase tracking-wide text-[--ink] transition-transform duration-200 hover:scale-110 hover:text-[--coral]">
+                <Link href="/contact" className="inline-block text-sm font-medium uppercase tracking-wide text-white transition-transform duration-200 hover:scale-110 hover:text-[var(--coral)]">
                   Contact
                 </Link>
               </li>
@@ -65,18 +65,18 @@ export default function Home() {
 
           <div className="flex flex-1 items-center pr-8">
             <div>
-              <h1 className="font-display text-[clamp(3rem,5.5vw,5rem)] font-semibold leading-[1.1] tracking-tight">
+              <h1 className="font-display text-[clamp(3rem,5.5vw,5rem)] font-semibold leading-[1.1] tracking-tight text-white">
                 Exploration
                 <br />
                 Robotics
               </h1>
-              <p className="mt-6 max-w-[36ch] text-lg text-[#4a5560]">
+              <p className="mt-6 max-w-[36ch] text-lg text-white/70">
                 Lorem Ipsum bla bla bla
               </p>
 
               <Link
                 href="/team"
-                className="mt-7 inline-block rounded-sm bg-[var(--coral)] px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[var(--ink)]"
+                className="mt-7 inline-block rounded-sm bg-[var(--coral)] px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[var(--deep)]"
               >
                 Learn more
               </Link>
@@ -87,14 +87,14 @@ export default function Home() {
 
       {/* LATEST SUBS */}
       <section className="mx-auto max-w-[1280px] px-[8vw] py-28">
-        <div className="mb-12 flex items-end justify-between border-b border-[--line] pb-6">
+        <div className="mb-12 flex items-end justify-between border-b border-[var(--line)] pb-6">
           <div>
-            <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[--coral]">
+            <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--coral)]">
               Build Progress
             </span>
             <h2 className="text-3xl font-semibold">Latest subs</h2>
           </div>
-          <Link href="/updates" className="border-b border-[--ink] pb-0.5 text-sm font-semibold">
+          <Link href="/updates" className="border-b border-[var(--ink)] pb-0.5 text-sm font-semibold">
             Learn more →
           </Link>
         </div>
@@ -109,7 +109,7 @@ export default function Home() {
               className="relative flex aspect-[4/5] flex-col justify-end overflow-hidden rounded-sm p-5 text-white"
               style={{ background: "linear-gradient(200deg, #0e7a8f, #052437 75%)" }}
             >
-              <span className="text-[11px] uppercase tracking-wide text-[--cyan]">{card.tag}</span>
+              <span className="text-[11px] uppercase tracking-wide text-[var(--cyan)]">{card.tag}</span>
               <h3 className="mt-2 text-xl font-semibold">{card.title}</h3>
               <p className="mt-2 text-sm text-white/70">{card.desc}</p>
             </div>
@@ -121,23 +121,23 @@ export default function Home() {
       <section className="mx-auto max-w-[1280px] px-[8vw] py-28">
         <div className="grid items-center gap-16 md:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[--coral]">Who we are</span>
+            <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--coral)]">Who we are</span>
             <h2 className="my-4 text-3xl font-semibold">About us</h2>
-            <p className="mb-4 text-base leading-7 text-[#3b444d]">
+            <p className="mb-4 text-base leading-7 text-white/70">
               ANU Exploration Robotics is a student-run team designing and building an autonomous
               underwater vehicle for the RobotX RoboSub competition. We&apos;re currently developing
               Prototype 1.0 — a tethered proof-of-concept vehicle that demonstrates controlled
               underwater movement, laying the foundation for a fully autonomous competition vehicle
               to follow.
             </p>
-            <p className="mb-4 text-base leading-7 text-[#3b444d]">
+            <p className="mb-4 text-base leading-7 text-white/70">
               We&apos;re a small, hands-on crew spanning mechanical, electrical, software, and
               business — following a disciplined design process from requirements through to
               in-water testing. Always looking for people who want to build something real.
             </p>
             <Link
               href="/contact"
-              className="mt-3 inline-block rounded-sm bg-[var(--coral)] px-7 py-3.5 text-xs font-semibold uppercase tracking-wide text-[var(--paper)] transition-colors hover:bg-[var(--ink)]">
+              className="mt-3 inline-block rounded-sm bg-[var(--coral)] px-7 py-3.5 text-xs font-semibold uppercase tracking-wide text-white transition-colors hover:bg-[var(--deep)]">
               Contact us
             </Link>
           </div>
@@ -150,14 +150,14 @@ export default function Home() {
 
       {/* MEET THE TEAM*/}
       <section className="mx-auto max-w-[1280px] px-[8vw] py-28">
-        <div className="mb-12 flex items-end justify-between border-b border-[--line] pb-6">
+        <div className="mb-12 flex items-end justify-between border-b border-[var(--line)] pb-6">
           <div>
-            <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[--coral]">
+            <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--coral)]">
               Who&apos;s building it
             </span>
             <h2 className="text-3xl font-semibold">Meet the team</h2>
           </div>
-          <Link href="/team" className="border-b border-[--ink] pb-0.5 text-sm font-semibold">
+          <Link href="/team" className="border-b border-[var(--ink)] pb-0.5 text-sm font-semibold">
             Learn more →
           </Link>
         </div>
@@ -171,21 +171,21 @@ export default function Home() {
             <div key={i}>
               <div
                 className="mb-3.5 aspect-square rounded-sm"
-                style={{ background: "linear-gradient(150deg, #e4e2db, #cfd3ce)" }}
+                style={{ background: "linear-gradient(150deg, #2a323a, #1a2027)" }}
               />
               <h4 className="font-display text-sm font-semibold">{member.name}</h4>
-              <span className="text-xs text-[#8a8f88]">{member.role}</span>
+              <span className="text-xs text-white/50">{member.role}</span>
             </div>
           ))}
         </div>
       </section>
 
       {/* SPONSORS */}
-      <section className="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-8 border-t border-[--line] px-[8vw] py-16">
+      <section className="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-8 border-t border-[var(--line)] px-[8vw] py-16">
         {Array.from({ length: 5 }).map((_, i) => (
           <div
             key={i}
-            className="flex h-10 w-[120px] items-center justify-center rounded-sm bg-[#eeede8] text-[10px] uppercase tracking-wide text-[#9a9c94]"
+            className="flex h-10 w-[120px] items-center justify-center rounded-sm bg-[#141d27] text-[10px] uppercase tracking-wide text-white/40"
           >
             Sponsor
           </div>

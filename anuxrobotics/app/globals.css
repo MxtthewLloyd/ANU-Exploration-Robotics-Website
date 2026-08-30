@@ -2,12 +2,12 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #0a1420;
-  --paper: #fffefe;
+  --ink: #f2f0ec;
+  --paper: #0b141d;
   --deep: #052437;
   --cyan: #3fd1c9;
   --coral: #ec7368;
-  --line: #e4e2db;
+  --line: #22303c;
   --hover: #ee5d5d;
 }
 
@@ -34,8 +34,15 @@ h1, h2, h3, .font-display {
 }
 
 .hero-white-panel {
-  clip-path: polygon(0 0, 58% 0, 38% 100%, 0 100%);
+  background: linear-gradient(
+    120deg,
+    rgba(0,0,0,0.9) 0%,
+    rgba(0,0,0,0.6) 40%, 
+    rgba(0,0,0,0.2) 60%, 
+    rgba(0,0,0,0) 100%   
+  );
 }
+
 
 .hero-image::after {
   content: "";
@@ -69,4 +76,3 @@ h1, h2, h3, .font-display {
   background: white;
   animation: scrollTick 1.8s ease-in-out infinite;
 }
-
