@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "ANU Exploration Robotics",
   description:
-    "ANU Exploration Robotics — RoboSub team building an autonomous underwater vehicle.",
+    "ANU Exploration Robotics - RoboSub team building an autonomous underwater vehicle.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

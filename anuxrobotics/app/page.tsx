@@ -100,9 +100,9 @@ export default function Home() {
         </div>
         <div className="grid gap-7 md:grid-cols-3">
           {[
-            { tag: "Lorem ipsum", title: "Lorem ipsum dolor", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-            { tag: "Lorem ipsum", title: "Sed do eiusmod", desc: "Ut enim ad minim veniam, quis nostrud exercitation." },
-            { tag: "Lorem ipsum", title: "Duis aute irure", desc: "Excepteur sint occaecat cupidatat non proident." },
+            { tag: "Status/Date", title: "Coming soon...", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+            { tag: "Status/Date", title: "Coming soon...", desc: "Ut enim ad minim veniam, quis nostrud exercitation." },
+            { tag: "Status/Date", title: "Coming soon...", desc: "Excepteur sint occaecat cupidatat non proident." },
           ].map((card) => (
             <div
               key={card.title}
@@ -126,13 +126,13 @@ export default function Home() {
             <p className="mb-4 text-base leading-7 text-white/70">
               ANU Exploration Robotics is a student-run team designing and building an autonomous
               underwater vehicle for the RobotX RoboSub competition. We&apos;re currently developing
-              Prototype 1.0 — a tethered proof-of-concept vehicle that demonstrates controlled
+              Prototype 1.0 - a tethered proof-of-concept vehicle that demonstrates controlled
               underwater movement, laying the foundation for a fully autonomous competition vehicle
               to follow.
             </p>
             <p className="mb-4 text-base leading-7 text-white/70">
               We&apos;re a small, hands-on crew spanning mechanical, electrical, software, and
-              business — following a disciplined design process from requirements through to
+              business - following a disciplined design process from requirements through to
               in-water testing. Always looking for people who want to build something real.
             </p>
             <Link
@@ -163,10 +163,11 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
           {[
-            { name: "Lorem Ipsum", role: "Lorem ipsum" },
-            { name: "Lorem Ipsum", role: "Lorem ipsum" },
-            { name: "Lorem Ipsum", role: "Lorem ipsum" },
-            { name: "Lorem Ipsum", role: "Lorem ipsum" },
+            { name: "Executive Team", role: "Leads strategy, planning, and overall project direction" },
+            { name: "Mechanical Team", role: "Designs and builds the submarine's structure and hardware" },
+            { name: "Electronics Team", role: "Handles wiring, sensors, and onboard hardware" },
+            { name: "Software Team", role: "Develops control, navigation, and scanning software" },
+            { name: "Business & Marketing Team", role: "Manages sponsorships, outreach, and public communications" },
           ].map((member, i) => (
             <div key={i}>
               <div
