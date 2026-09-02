@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // Depth colour stops: [scroll progress 0-1, hex colour]
 const STOPS: [number, string][] = [
@@ -42,6 +42,7 @@ function colourAt(progress: number) {
 }
 
 export default function DepthBackground() {
+  const [bg, setBg] = useState(STOPS[0][1]);
   const ticking = useRef(false);
 
   useEffect(() => {
@@ -52,8 +53,7 @@ export default function DepthBackground() {
         const doc = document.documentElement;
         const max = doc.scrollHeight - doc.clientHeight;
         const progress = max > 0 ? window.scrollY / max : 0;
-        // Single source of truth — .hero-fade and anything else reads this too
-        doc.style.setProperty("--depth-color", colourAt(progress));
+        setBg(colourAt(progress));
         ticking.current = false;
       });
     }
@@ -70,7 +70,7 @@ export default function DepthBackground() {
     <div
       aria-hidden
       className="fixed inset-0 -z-10 transition-colors duration-300 ease-out"
-      style={{ background: "var(--depth-color, #1a7f94)" }}
+      style={{ background: bg }}
     />
   );
 }

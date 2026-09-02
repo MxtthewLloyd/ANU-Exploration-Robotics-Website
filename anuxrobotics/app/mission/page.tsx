@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import DepthBackground from "@/components/DepthBackground";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const requirements = [
@@ -93,7 +92,6 @@ const sponsorBenefits = [
 export default function ProspectusPage() {
   return (
     <>
-      <DepthBackground />
       <Header />
 
       {/* COVER */}
