@@ -11,14 +11,12 @@ export default function Home() {
       <section className="relative h-screen min-h-[640px] overflow-hidden bg-[var(--paper)]">
         <div className="hero-image absolute inset-0">
           <video
+            src="https://8ibw5t5babbgnqif.public.blob.vercel-storage.com/211375.mp4"
             autoPlay
             muted
             loop
             playsInline
-            className="absolute inset-0 h-full w-full object-cover"
-          >
-            <source src="/211375.mp4" type="video/mp4" />
-          </video>
+          />
         </div>
 
         <div className="hero-white-panel absolute inset-0 z-[1]" />
