@@ -11,11 +11,12 @@ export default function Home() {
       <section className="relative h-screen min-h-[640px] overflow-hidden bg-[var(--paper)]">
         <div className="hero-image absolute inset-0">
           <video
-            src="https://8ibw5t5babbgnqif.public.blob.vercel-storage.com/211375.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
+              className="object-cover w-full h-full"
+              src="https://8ibw5t5babbgnqif.public.blob.vercel-storage.com/211375.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
           />
         </div>
 
