@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import NavBar from "@/components/ui/NavBar";
 import DepthBackground from "@/components/DepthBackground";
 
 export default function Home() {
@@ -30,59 +30,9 @@ export default function Home() {
           </span>
         </div>
 
-        <div className="relative z-[2] flex h-full w-full flex-col px-6 pb-16 pt-8 md:w-[62%] md:px-12">
-          <nav className="flex items-center gap-16 md:pr-16">
-            <div className="flex items-center gap-2.5">
-              <Image src="/logo.png" alt="Exploration Robotics logo" width={200} height={40} />
-            </div>
-            <ul className="hidden gap-10 md:flex">
-              <li className="group relative">
-                <button
-                  type="button"
-                  className="text-sm font-medium uppercase tracking-wide text-white transition-transform duration-200 hover:scale-110 hover:text-[var(--coral)]"
-                >
-                  About
-                </button>
+        <div className="relative z-[2] flex h-full w-full flex-col px-6 pb-16 pt-8 md:px-12">
 
-                <div className="absolute left-0 top-full h-3 w-full" />
-
-                <div className="invisible absolute left-0 top-full min-w-[160px] translate-y-1 rounded-sm border border-[var(--line)] bg-[var(--paper)] p-2 opacity-0 shadow-lg transition-all duration-150 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-                  <Link
-                    href="/team"
-                    className="block rounded-sm px-3 py-2 text-sm text-white transition-colors hover:bg-white/5 hover:text-[var(--coral)]"
-                  >
-                    Team
-                  </Link>
-                  <Link
-                    href="/mission"
-                    className="block rounded-sm px-3 py-2 text-sm text-white transition-colors hover:bg-white/5 hover:text-[var(--coral)]"
-                  >
-                    Mission
-                  </Link>
-                </div>
-              </li>
-              <li>
-                <Link href="/vehicle" className="inline-block text-sm font-medium uppercase tracking-wide text-white transition-transform duration-200 hover:scale-110 hover:text-[var(--coral)]">
-                  Vehicle
-                </Link>
-              </li>
-              <li>
-                <Link href="/sponsors" className="inline-block text-sm font-medium uppercase tracking-wide text-white transition-transform duration-200 hover:scale-110 hover:text-[var(--coral)]">
-                  Partners
-                </Link>
-              </li>
-              <li>
-                <Link href="/updates" className="inline-block text-sm font-medium uppercase tracking-wide text-white transition-transform duration-200 hover:scale-110 hover:text-[var(--coral)]">
-                  Updates
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="inline-block text-sm font-medium uppercase tracking-wide text-white transition-transform duration-200 hover:scale-110 hover:text-[var(--coral)]">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          <NavBar/>
 
           <div className="flex flex-1 items-center pr-8">
             <div>

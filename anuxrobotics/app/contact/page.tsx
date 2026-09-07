@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import Header from "@/components/Header";
 import Link from "next/link";
+import NavBar from "@/components/ui/NavBar";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -42,7 +43,9 @@ export default function ContactPage() {
 
   return (
     <>
-      <Header />
+      <div className="relative z-[2] flex h-full w-full flex-col px-6 pt-8 md:px-12">
+        <NavBar />
+      </div>
 
       {/* PAGE HERO */}
       <section className="mx-auto max-w-[1280px] px-6 pb-16 pt-32">

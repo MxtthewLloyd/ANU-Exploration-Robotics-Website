@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import NavBar from "@/components/ui/NavBar";
 
 const updates = [
   {
@@ -24,7 +25,9 @@ const updates = [
 export default function UpdatesPage() {
   return (
     <>
-      <Header />
+      <div className="relative z-[2] flex h-full w-full flex-col px-6 pt-8 md:px-12">
+        <NavBar />
+      </div>
 
       {/* PAGE HERO */}
       <section className="mx-auto max-w-[1280px] px-6 pb-16 pt-32">

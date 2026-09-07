@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import ScrollReveal from "@/components/ScrollReveal";
+import NavBar from "@/components/ui/NavBar";
 
 const requirements = [
   {
@@ -92,7 +93,9 @@ const sponsorBenefits = [
 export default function ProspectusPage() {
   return (
     <>
-      <Header />
+      <div className="relative z-[2] flex h-full w-full flex-col px-6 pt-8 md:px-12">
+        <NavBar />
+      </div>
 
       {/* COVER */}
       <section className="mx-auto flex min-h-[70vh] max-w-[1280px] flex-col justify-center px-[8vw] py-24">

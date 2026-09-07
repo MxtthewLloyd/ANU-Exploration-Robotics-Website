@@ -15,7 +15,7 @@ const NAV_LINKS = [
   },
   { href: "/vehicle", label: "Vehicle" },
   { href: "/updates", label: "Updates" },
-  { href: "/sponsors", label: "Sponsors" },
+  { href: "/sponsors", label: "Partners" },
   { href: "/contact", label: "Contact" },
 ];
 
